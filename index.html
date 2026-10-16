@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f2ec">
+  <meta name="description" content="A private birthday universe created for Shruthi.">
+  <title>For Shruthi — HER Universe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="celebrationCanvas" class="celebration-canvas" aria-hidden="true">
+    <div id="rocketTrail" class="rocket-trail" aria-hidden="true"></div>
+    <div id="rocket" class="hanabi-rocket" aria-hidden="true">
+      <span class="rocket-core"></span>
+      <span class="rocket-tail"></span>
+    </div>
+    <div id="hanabiBurst" class="hanabi-burst" aria-hidden="true"></div>
+    <div id="fallingSparkles" class="falling-sparkles" aria-hidden="true"></div>
+    <div id="celebrationMessage" class="celebration-message" aria-hidden="true">
+      <span class="celebration-date">20 August 2021</span>
+      <span class="celebration-subtitle">One date changed everything.</span>
+    </div>
+  </div>
+
+  <div id="intro" class="intro-screen">
+    <div class="celebration-corner celebration-top-left" aria-hidden="true"></div>
+    <div class="celebration-corner celebration-top-right" aria-hidden="true"></div>
+    <div class="celebration-corner celebration-bottom-left" aria-hidden="true"></div>
+    <div class="celebration-corner celebration-bottom-right" aria-hidden="true"></div>
+    <div class="intro-stars" aria-hidden="true"></div>
+    <div class="intro-content">
+      <p class="eyebrow">A small universe, made for one person</p>
+      <h1>For Shruthi</h1>
+      <p class="intro-subtitle">Before entering, solve a little puzzle.</p>
+
+      <div class="puzzle-card">
+        <p class="puzzle-label">Birthday puzzle</p>
+        <p id="puzzleQuestion" class="puzzle-question">Loading…</p>
+        <input id="puzzleAnswer" class="puzzle-input" type="text"
+               autocomplete="off" placeholder="Your answer">
+        <button id="unlockButton" class="button button-dark">Enter my universe</button>
+        <p id="puzzleMessage" class="form-message" role="status"></p>
+      </div>
+
+      <p class="tiny-note">Hint: it is the date we became husband and wife. ♡</p>
+    </div>
+  </div>
+
+  <section id="partyTransition" class="party-transition hidden" aria-hidden="true" role="status" aria-label="A surprise birthday celebration">
+    <div class="party-confetti" aria-hidden="true"></div>
+    <div class="party-artwork-wrap" aria-hidden="true">
+      <img class="party-artwork" src="media/cartoon-party-gang.png" alt="A joyful cartoon birthday party with dancing characters and a countdown bomb">
+      <div id="partyCountdown" class="party-countdown" aria-live="assertive">10</div>
+    </div>
+    <div id="partyBlast" class="party-blast" aria-hidden="true"><div class="blast-sparkles" aria-hidden="true">✦ ✧ ✨ ✦ ✧ ✨ ✦</div><span>💥</span><b>HAPPY BIRTHDAY, SHRUTHI!</b><i>✨ 🎉 ✨</i><div class="blast-sparkles" aria-hidden="true">✧ ✨ ✦ ✧ ✨ ✦ ✧</div></div>
+    <p id="partyCaption" class="party-caption">The dancing is serious. The bomb is… suspicious. 😄</p>
+  </section>
+
+  <main id="site" class="site hidden" aria-hidden="true">
+    <div class="page-corner-crackers" aria-hidden="true">
+      <div class="page-cracker page-cracker-tl"></div>
+      <div class="page-cracker page-cracker-tr"></div>
+      <div class="page-cracker page-cracker-bl"></div>
+      <div class="page-cracker page-cracker-br"></div>
+    </div>
+
+    <header class="hero section">
+      <div class="hero-petal-field" aria-hidden="true"></div>
+      <nav class="nav">
+        <a class="brand" href="#top">HER / <span>Universe</span></a>
+      </nav>
+
+      <div class="hero-content" id="top">
+        <p class="eyebrow">A birthday experience for</p>
+        <h1>Shruthi</h1>
+        <p class="hero-line">Some people receive a birthday wish.<br><em>You received a little universe.</em></p>
+        <a class="scroll-link" href="#countdown">Begin ↓</a>
+      </div>
+
+      <div class="moon-orbit" aria-hidden="true">
+        <span class="moon"></span>
+        <span class="orbit-dot"></span>
+      </div>
+    </header>
+
+    <section id="countdown" class="section countdown-section">
+      <div class="section-inner narrow">
+        <p class="eyebrow">The day we are waiting for</p>
+        <h2>Your birthday is almost here.</h2>
+
+        <div class="countdown-grid" aria-live="polite">
+          <div><span id="days">--</span><small>days</small></div>
+          <div><span id="hours">--</span><small>hours</small></div>
+          <div><span id="minutes">--</span><small>minutes</small></div>
+          <div><span id="seconds">--</span><small>seconds</small></div>
+        </div>
+
+        <p id="birthdayStatus" class="countdown-status"></p>
+      </div>
+    </section>
+
+    <section id="childhood" class="section cream">
+      <div class="section-inner">
+        <div class="chapter-heading">
+          <span class="chapter-number">01</span>
+          <div>
+            <p class="eyebrow">Before I knew you</p>
+            <h2>The little girl who became Shruthi.</h2>
+          </div>
+        </div>
+
+        <p class="section-intro">
+          Two little windows into your world: the tiny adventurer you once were, and the beautiful woman I get to celebrate today.
+          I may not have a whole album of your childhood, but even one old photograph feels like a treasure.
+        </p>
+
+        <div class="memory-grid memory-grid-two">
+          <article class="memory-card memory-card-photo reveal">
+            <div class="memory-photo-wrap">
+              <img class="memory-photo childhood-photo" src="media/shruthi-childhood.jpg" alt="A childhood photograph of Shruthi outdoors with family nearby" loading="lazy">
+              <span class="photo-stamp">Little Shruthi ♡</span>
+            </div>
+            <div class="memory-copy">
+              <p class="memory-tag">Chapter one · The little adventurer</p>
+              <h3>Before the world knew your smile</h3>
+              <p>If I could step into this old photograph, I’d tell that little girl that she’d grow up to mean the world to someone. I wish I could meet her, hold her hand, and give her the biggest hug.</p>
+            </div>
+          </article>
+
+          <article class="memory-card memory-card-photo reveal">
+            <div class="memory-photo-wrap">
+              <img class="memory-photo portrait-photo" src="media/shruthi-portrait.jpg" alt="Shruthi wearing a cream saree and purple blouse" loading="lazy">
+              <span class="photo-stamp">My favourite person ♡</span>
+            </div>
+            <div class="memory-copy">
+              <p class="memory-tag">Chapter two · The woman you are</p>
+              <h3>And then there was you</h3>
+              <p>Every version of you has a story worth keeping. This is one of those moments I’d save—not because a photograph can hold all your magic, but because it reminds me how lucky I am to have you in my life.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="marriage" class="section marriage-section">
+      <div class="section-inner">
+        <div class="chapter-heading">
+          <span class="chapter-number">02</span>
+          <div>
+            <p class="eyebrow">The day our worlds became one</p>
+            <h2>Our beginning, held in love.</h2>
+          </div>
+        </div>
+
+        <p class="section-intro marriage-intro">
+          From standing side by side, to a quiet moment that says more than words, to receiving your parents’ blessings — these are pieces of the day and the family that helped shape our story.
+        </p>
+
+        <div class="marriage-gallery">
+          <article class="memory-card memory-card-photo marriage-card reveal">
+            <div class="memory-photo-wrap">
+              <img class="memory-photo marriage-photo" src="media/our-beginning.jpg" alt="The two of us standing together at the doorway on our wedding journey" loading="lazy">
+              <span class="photo-stamp">Where our forever began ♡</span>
+            </div>
+            <div class="memory-copy">
+              <p class="memory-tag">A day to keep close</p>
+              <h3>Me and you, choosing us</h3>
+              <p>Among all the places life could take us, I’m grateful our paths became one. I would still choose you, in every chapter.</p>
+            </div>
+          </article>
+
+          <article class="memory-card memory-card-photo marriage-card reveal">
+            <div class="memory-photo-wrap">
+              <img class="memory-photo marriage-photo" src="media/our-close-moment.jpg" alt="A close, tender moment between the couple" loading="lazy">
+              <span class="photo-stamp">Just us ♡</span>
+            </div>
+            <div class="memory-copy">
+              <p class="memory-tag">A little moment, a lifetime of meaning</p>
+              <h3>When the world went quiet</h3>
+              <p>Some photographs don’t need a long explanation. They hold a feeling — closeness, trust, and the comfort of being right there with you.</p>
+            </div>
+          </article>
+
+          <article class="memory-card memory-card-photo marriage-card reveal">
+            <div class="memory-photo-wrap">
+              <img class="memory-photo marriage-photo family-photo" src="media/family-blessings.jpg" alt="A family moment as we receive blessings from her parents" loading="lazy">
+              <span class="photo-stamp">Blessings we carry ♡</span>
+            </div>
+            <div class="memory-copy">
+              <p class="memory-tag">Family · Faith · Forever</p>
+              <h3>A blessing that stays with us</h3>
+              <p>I will always carry deep respect and love for Appa. I miss him, and I wish he could be here with us. I believe the goodness he gave us lives on in the way we love, care for family, and do good deeds. Wherever he is, I hope he sees us trying to make him proud.</p>
+            </div>
+          </article>
+        </div>
+        <p class="memory-footnote">Some people remain part of every beautiful moment, even when we can no longer see them. ♡</p>
+      </div>
+    </section>
+
+    <section id="story" class="section">
+      <div class="section-inner">
+        <div class="chapter-heading">
+          <span class="chapter-number">03</span>
+          <div>
+            <p class="eyebrow">Our story</p>
+            <h2>The memories that became "us".</h2>
+          </div>
+        </div>
+
+        <article class="terrace-memory reveal">
+          <div class="terrace-photo-frame">
+            <img src="media/shobha-chicken-terrace.jpg" alt="Shruthi smiling on the old house terrace with a plate of homemade chicken kebabs" loading="lazy">
+            <span class="terrace-photo-label">My chicken lover ♡</span>
+          </div>
+          <div class="terrace-memory-copy">
+            <p class="memory-tag">January 2022 · A little memory of home</p>
+            <h3>The chicken lover & her terrace</h3>
+            <p>I still don't know what it was about that old house, but somehow, it felt more like home. Maybe it was the peaceful terrace, the familiar surroundings, or simply seeing you sitting there with a plate of Shobha's chicken kebabs — my chicken lover, enjoying her favourite food.</p>
+            <p>Nothing extraordinary was happening. No big plans, no special occasion. Just you, those kebabs, and that quiet terrace. But sometimes, the simplest moments stay with us the longest. That old terrace had a kind of peace that money could never buy.</p>
+            <p class="terrace-final-line">Maybe home was never really the house. Maybe it was the happiness I felt seeing you happy there. ♡</p>
+          </div>
+        </article>
+
+        <div class="phone-memory-pair">
+          <article class="phone-memory-card reveal">
+            <div class="phone-memory-photo photo-frame-interactive">
+              <img src="media/phone-day-1.jpg" alt="The new dark blue phone on day one, before the memorable mishap" loading="lazy">
+              <span class="phone-photo-stamp">DAY 01 · THE NEW PHONE</span>
+            </div>
+            <div class="phone-memory-copy">
+              <p class="memory-tag">October 2021 · The beginning of a legendary story</p>
+              <h3>Day 1: A brand-new phone 📱</h3>
+              <p>I can still picture the excitement of that new phone. It looked like the start of so many little moments we would capture together. We had no idea it was about to become the star of a story we would remember for years.</p>
+              <p class="phone-memory-punchline">One new phone. Two days. A memory that somehow outlived the phone. ♡</p>
+            </div>
+          </article>
+          <article class="phone-memory-card phone-memory-card-reverse reveal">
+            <div class="phone-memory-photo photo-frame-interactive">
+              <img src="media/phone-day-2-crashed.jpg" alt="The same phone after its unfortunate crash on day two" loading="lazy">
+              <span class="phone-photo-stamp">DAY 02 · PLOT TWIST</span>
+            </div>
+            <div class="phone-memory-copy">
+              <p class="memory-tag">The next day · A tiny disaster, a forever memory</p>
+              <h3>Day 2: The phone had other plans 😅</h3>
+              <p>I still remember the fear in your eyes when the phone got destroyed — that look as if I was about to eat you alive! 😂 I can only imagine what was running through your mind. It was a small disaster in the moment, but today it makes me smile every time I think about it.</p>
+              <p>That phone was damaged, but the memory was saved perfectly. I miss those beautiful days more than I can explain; they still play so clearly in my mind, like they happened just yesterday.</p>
+              <p class="phone-memory-punchline">The phone didn't survive the second day. The story has survived all these years. And yes, I still remember that face. ❤️</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="phone-memory-pair drive-memory-pair">
+          <article class="phone-memory-card reveal">
+            <div class="phone-memory-photo photo-frame-interactive">
+              <img src="media/blacky-thar-drive-1.jpg" alt="A memory from a long drive together in Blacky Thar" loading="lazy">
+              <span class="phone-photo-stamp">OUR LONG DRIVES · BLACKY THAR</span>
+            </div>
+            <div class="phone-memory-copy">
+              <p class="memory-tag">August 2021 · My favourite adventure partner</p>
+              <h3>My sleeping beauty &amp; co-pilot ♡</h3>
+              <p>My sleeping beauty, my life’s best adventure partner. I miss these long drives with you — the roads, the little moments, and simply having you beside me. Somehow, even an ordinary drive became a memory I want to keep.</p>
+              <p class="phone-memory-punchline">Every road felt a little more special because you were on it. ❤️</p>
+            </div>
+          </article>
+          <article class="phone-memory-card phone-memory-card-reverse reveal">
+            <div class="phone-memory-photo photo-frame-interactive">
+              <img src="media/blacky-thar-drive-2.jpg" alt="Shruthi resting peacefully during a road trip in Blacky Thar" loading="lazy">
+              <span class="phone-photo-stamp">SLEEPY PASSENGER · HAPPY HEART</span>
+            </div>
+            <div class="phone-memory-copy">
+              <p class="memory-tag">A little road-trip moment · Forever missed</p>
+              <h3>Blacky Thar misses you too 🖤</h3>
+              <p>Even though there’s a new car now, it doesn’t feel the same with you away. Blacky Thar misses its favourite passenger, and I miss the long drives we used to take together. I’d happily trade the fanciest car for one more of those simple days with you beside me.</p>
+              <p>At the same time, I love seeing you explore the world, discover new places, and have fun. Go collect all those beautiful experiences, my love. I’ll be cheering for you from here — and saving a seat for you on our next adventure.</p>
+              <p class="phone-memory-punchline">The roads are still there. Our next adventure is waiting. Until then, keep exploring, sleeping beauty. ❤️</p>
+            </div>
+          </article>
+        </div>
+
+        <article class="terrace-memory reveal appa-memory">
+          <div class="terrace-photo-frame photo-frame-interactive">
+            <img src="media/appa-plant-memory.jpg" alt="Shruthi sitting beside the tall plant with warm little lights" loading="lazy">
+            <span class="terrace-photo-label">A little piece of Appa’s care ♡</span>
+          </div>
+          <div class="terrace-memory-copy">
+            <p class="memory-tag">The quiet kind of love · A memory that stays</p>
+            <h3>The plant that reminds me of Appa’s heart 🌿</h3>
+            <p>Whenever I see this photo, I think of the plant Appa gave us — standing tall beside you, just as his care has always stood quietly around us. I remember how he would worry until we reached home safely. Back then, we might not have paused to notice every little act of care; now, I understand how much love was tucked inside those worries.</p>
+            <p>Funny how we sometimes recognise the depth of someone’s care most clearly when we miss it. The plant is still a simple plant, but this picture holds something bigger: the feeling of being looked after, the warmth of home, and a kind of love that doesn’t always need big words.</p>
+            <p class="terrace-final-line">May we always notice the people who care for us — and carry that same gentle care into the home we build together. ♡</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="distance" class="section distance-section">
+      <div class="section-inner">
+        <div class="chapter-heading">
+          <span class="chapter-number">04</span>
+          <div>
+            <p class="eyebrow">The distance, the waiting, and the promise</p>
+            <h2>Different places. Still my person.</h2>
+          </div>
+        </div>
+        <p class="section-intro distance-intro">
+          Our story is made of more than milestones. It lives in the places we have seen, the work and dreams you keep growing toward, the quiet everyday moments, and the memories we carry when we cannot be in the same place.
+        </p>
+
+        <div class="distance-gallery">
+          <article class="memory-card memory-card-photo distance-card reveal">
+            <div class="memory-photo-wrap"><img class="memory-photo distance-photo" src="media/japan-castle-memory.jpg" alt="Shruthi visiting a traditional Japanese castle on a bright day" loading="lazy"><span class="photo-stamp">A world of your own ♡</span></div>
+            <div class="memory-copy"><p class="memory-tag">Places and new chapters</p><h3>Look at the world you are exploring</h3><p>I love seeing you discover new places and make a life filled with your own experiences. I hope there are many more beautiful corners of the world waiting for you.</p></div>
+          </article>
+          <article class="memory-card memory-card-photo distance-card reveal">
+            <div class="memory-photo-wrap"><img class="memory-photo distance-photo" src="media/shruthi-research-milestone.jpg" alt="Shruthi smiling beside an academic research poster" loading="lazy"><span class="photo-stamp">So proud of you ♡</span></div>
+            <div class="memory-copy"><p class="memory-tag">Your dreams and achievements</p><h3>Keep becoming who you want to be</h3><p>Your effort, curiosity, and the things you work toward deserve to be celebrated too. I am proud of the person you are and the future you are building.</p></div>
+          </article>
+          <article class="memory-card memory-card-photo distance-card reveal">
+            <div class="memory-photo-wrap"><img class="memory-photo distance-photo" src="media/our-green-escape.jpg" alt="A relaxed couple memory outdoors among green trees" loading="lazy"><span class="photo-stamp">A little escape ♡</span></div>
+            <div class="memory-copy"><p class="memory-tag">The places we share</p><h3>Anywhere feels lighter with you</h3><p>It does not have to be a grand trip. Sometimes it is enough to sit together, breathe, laugh, and let the rest of the world wait for a while.</p></div>
+          </article>
+          <article class="memory-card memory-card-photo distance-card reveal">
+            <div class="memory-photo-wrap"><img class="memory-photo distance-photo" src="media/family-at-home.jpg" alt="A family memory at home with loved ones" loading="lazy"><span class="photo-stamp">Our people, our roots ♡</span></div>
+            <div class="memory-copy"><p class="memory-tag">Family and belonging</p><h3>The love that surrounds us</h3><p>Family is part of the story we carry with us. I hope we keep making time for the people who have loved us, shaped us, and helped us become who we are.</p></div>
+          </article>
+          <article class="memory-card memory-card-photo distance-card reveal">
+            <div class="memory-photo-wrap"><img class="memory-photo distance-photo" src="media/city-lights-together.jpg" alt="The couple standing together outdoors at night among city lights" loading="lazy"><span class="photo-stamp">One more memory ♡</span></div>
+            <div class="memory-copy"><p class="memory-tag">Little adventures together</p><h3>One more evening to remember</h3><p>One day, we will look back at these photographs and remember not just where we were, but how good it felt to have each other there.</p></div>
+          </article>
+          <article class="memory-card memory-card-photo distance-card reveal">
+            <div class="memory-photo-wrap"><img class="memory-photo distance-photo" src="media/quiet-together.jpg" alt="A quiet candid moment of the couple together indoors" loading="lazy"><span class="photo-stamp">My everyday favourite ♡</span></div>
+            <div class="memory-copy"><p class="memory-tag">The ordinary magic</p><h3>Not every memory needs a plan</h3><p>The unplanned photographs often become favourites. No big occasion—just us, being ourselves, and another small piece of our life together.</p></div>
+          </article>
+          <article class="memory-card memory-card-photo distance-card reveal">
+            <div class="memory-photo-wrap"><img class="memory-photo distance-photo" src="media/our-outdoor-memory.jpg" alt="The couple sitting together outdoors surrounded by greenery" loading="lazy"><span class="photo-stamp">Always on the same team ♡</span></div>
+            <div class="memory-copy"><p class="memory-tag">Together, even across miles</p><h3>Until the next time I can hold you</h3><p>Some days the distance will feel long. On those days, I hope these memories remind us that our story is bigger than the miles between us—and that there are still so many chapters ahead.</p></div>
+          </article>
+        </div>
+        <div class="distance-note reveal">
+          <p class="eyebrow">Until our next hug</p>
+          <h3>My favourite place will always be wherever we find our way back to each other.</h3>
+          <p>Happy birthday, Shruthi. Different places, one home in each other. ♡</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="dino-wish" class="section dark-section dino-wish-section">
+      <div class="section-inner narrow">
+        <p class="eyebrow">A little voice, a very big place in your heart</p>
+        <h2>A birthday wish from your best friend.</h2>
+        <p class="section-intro">Some birthday wishes come wrapped in gifts. This one comes from Diyan, who can't wait to play games with his Shru Atte again.</p>
+
+        <figure class="dino-film-card reveal">
+          <div class="dino-film-frame">
+            <video class="dino-video" controls playsinline preload="metadata" aria-label="Diyan's birthday wish for Shru Atte">
+              <source src="media/dino-birthday-wish.mp4" type="video/mp4">
+              Your browser does not support video playback. Please try another browser.
+            </video>
+            <span class="film-corner film-corner-tl" aria-hidden="true">♡</span>
+            <span class="film-corner film-corner-br" aria-hidden="true">♡</span>
+          </div>
+          <figcaption class="dino-caption">
+            <p class="memory-tag">From Diyan, with love</p>
+            <h3>“Come soon, Shru Atte!”</h3>
+            <p>“I miss playing games with you, atte. Come soon and enjoy your birthday! You'll always be my best friend.”</p>
+            <p class="dino-signoff">Your Diyan ❤️</p>
+          </figcaption>
+        </figure>
+        <p class="dino-note">Press play when you're ready. Keep this little wish close for the days you miss your favourite game partner. ♡</p>
+      </div>
+    </section>
+
+    <section id="vihaan-wish" class="section dark-section dino-wish-section">
+      <div class="section-inner narrow">
+        <p class="eyebrow">A tiny dancer, a giant hug</p>
+        <h2>A birthday wish from your little Vihaan.</h2>
+        <p class="section-intro">One more little voice with a very big place in your heart — and a very important birthday-day change of favourite person.</p>
+
+        <figure class="dino-film-card reveal">
+          <div class="dino-film-frame">
+            <video class="dino-video" controls playsinline preload="metadata" aria-label="Vihaan's birthday wish for Domma">
+              <source src="media/vihaan-domma-birthday-wish.mp4" type="video/mp4">
+              Your browser does not support video playback. Please try another browser.
+            </video>
+            <span class="film-corner film-corner-tl" aria-hidden="true">♡</span>
+            <span class="film-corner film-corner-br" aria-hidden="true">♡</span>
+          </div>
+          <figcaption class="dino-caption">
+            <p class="memory-tag">From Vihaan, with mischief</p>
+            <h3>“Domma, I'm your favourite today!”</h3>
+            <p>“Domma, I miss playing and dancing with you! I've grown bigger now, so next time I'll make you run behind me and try to catch me — and then we'll dance together. But I still like Doppa more! 🙈😂 Since it's your birthday, you're my favourite today. Happy Birthday, Domma! I miss my huggyyyy!”</p>
+            <p class="dino-signoff">Your little naughty Vihaan ❤️</p>
+          </figcaption>
+        </figure>
+        <p class="dino-note">Press play for Vihaan's birthday wish. Save a big hug for the next time you meet. ♡</p>
+      </div>
+    </section>
+
+    <section id="final" class="section final-section">
+      <div class="section-inner narrow finale-inner">
+        <p class="eyebrow">For the girl who is my whole universe</p>
+        <p class="final-kicker">Today, the universe has one favourite person.</p>
+        <h2 class="final-birthday-title"><span>Happy</span><em>Birthday,</em><strong>Shruthi</strong></h2>
+        <p class="section-intro final-message">If I could, I would fold every little memory, every hug we owe each other, every laugh, and every tomorrow into one giant gift box — and put <strong>you</strong> inside the happiest part of it.</p>
+        <div class="final-orbit" aria-hidden="true"><span>♡</span><i></i><b></b><small>YOU</small></div>
+        <button id="finalSurpriseButton" class="final-surprise-button" type="button" aria-expanded="false">Open one last little surprise ↗</button>
+        <div id="finalSurprise" class="final-surprise hidden" aria-live="polite">
+          <p class="surprise-label">A tiny wish, just for you</p>
+          <p>May this year bring you brave adventures, soft landings, ridiculous laughter, and a thousand reasons to feel loved. Keep exploring your world, Shru. No matter how many miles sit between us, you will always have a home in mine.</p>
+          <p class="surprise-signoff">Forever your person. Always your biggest cheerleader. ♡</p>
+          <div class="heart-sprinkle" aria-hidden="true">♡　✦　♡　✧　♡</div>
+        </div>
+        <p class="final-footnote">This isn't the end of our story. It's just another page with your name on it.</p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>Made with love, from one city to another.</p>
+      <p class="footer-small">HER Universe · V1</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
